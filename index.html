@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>Job Registration Form</title>
 </head>
 <body>
-    
-    <h1 align="center">Home page</h1>
+
+<form action="#" method="post">
+    <fieldset>
+        <legend>JOB REGISTRATION FORM</legend>
+
+        <label for="email">Enter Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <br><br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter Your Password"
+               pattern=".{6,}" title="Minimum 6 characters" required>
+        <br><br>
+
+        <label for="dob">Enter D.O.B:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="DL">Delhi</option>
+            <option value="PN">Punjab</option>
+            <option value="HR">Haryana</option>
+            <option value="JK">Jammu & Kashmir</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="BR">Bihar</option>
+            <option value="RJ">Rajasthan</option>
+        </select>
+        <br><br>
+
+        Highest Education:
+        <input type="checkbox" id="grad" name="education" value="Graduation">
+        <label for="grad">Graduation</label>
+
+        <input type="checkbox" id="pg" name="education" value="Post Graduation">
+        <label for="pg">Post Graduation</label>
+        <br><br>
+
+        <label for="experience">Work Experience (years):</label>
+        <input type="number" id="experience" name="experience" min="0" max="50">
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <a href="resume.html" target="_blank">View Resume Format</a>
+        <br><br>
+
+        <textarea name="message" rows="5" cols="30" placeholder="Enter your text here"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <progress value="32" max="100"></progress>
+    </fieldset>
+
+    <fieldset>
+        <legend>FAQs</legend>
+
+        <details>
+            <summary>What is the minimum salary?</summary>
+            <p>Starting package is 2.5 LPA, highest is 20 LPA.</p>
+        </details>
+
+        <details>
+            <summary>Can freshers apply?</summary>
+            <p>No, minimum 2 years experience required.</p>
+        </details>
+
+        <details>
+            <summary>Work from home available?</summary>
+            <p>Yes, hybrid mode after 6 months.</p>
+        </details>
+    </fieldset>
+</form>
+
 </body>
 </html>
